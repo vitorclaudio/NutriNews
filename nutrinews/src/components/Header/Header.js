@@ -1,31 +1,24 @@
 import './Header.css';
 
 const Header = ({ today }) => {
-  const month = today.split(' ').slice(1, 2);
-  let numDate = today.split(' ').slice(2).join(', ');
-  const formatMonths = {
-    'Jan': 'Janeiro',
-    'Feb': 'Fevereiro',
-    'Mar': 'Março',
-    'Apr': 'Abril',
-    'May': 'Maio',
-    'Jun': 'Junho',
-    'Jul': 'Julho',
-    'Aug': 'Agosto',
-    'Sep': 'Setembro',
-    'Oct': 'Outubro',
-    'Nov': 'Novembro',
-    'Dec': 'Dezembro'
-  };
+  // Criação de uma nova data com o valor de today
+  const date = new Date(today);
 
-  if (numDate.charAt(0) === '0') {
-    numDate = numDate.slice(1);
-  }
+  // Mapeamento dos meses em português
+  const formatMonths = [
+    'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+  ];
+
+  // Extração do dia, mês e ano
+  const day = date.getDate();
+  const month = formatMonths[date.getMonth()];
+  const year = date.getFullYear();
 
   return (
       <header>
         <h1>Nutri News</h1>
-        <p>Principais notícias de nutrição para hoje, {numDate + ' de ' + formatMonths[month]}</p>
+        <p>Principais notícias de nutrição para hoje, {`${day} de ${month} de ${year}`}</p>
       </header>
   );
 };
