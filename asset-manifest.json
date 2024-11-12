@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NutriNews/static/css/main.59e1e736.css",
-    "main.js": "/NutriNews/static/js/main.a04604e0.js",
+    "main.js": "/NutriNews/static/js/main.550bc0dc.js",
     "static/media/Jantar Vegano.jpg": "/NutriNews/static/media/Jantar Vegano.15e61a28d14e30f8f8b1.jpg",
     "static/media/Variedade de Superalimentos.jpg": "/NutriNews/static/media/Variedade de Superalimentos.e00717239e7f5ca0c136.jpg",
     "static/media/Vegetais Frescos.jpg": "/NutriNews/static/media/Vegetais Frescos.8a9e50f1a6f10aac634c.jpg",
@@ -14,10 +14,10 @@
     "static/media/Copo de Água.jpg": "/NutriNews/static/media/Copo de Água.d83558bda91c42ce19c9.jpg",
     "index.html": "/NutriNews/index.html",
     "main.59e1e736.css.map": "/NutriNews/static/css/main.59e1e736.css.map",
-    "main.a04604e0.js.map": "/NutriNews/static/js/main.a04604e0.js.map"
+    "main.550bc0dc.js.map": "/NutriNews/static/js/main.550bc0dc.js.map"
   },
   "entrypoints": [
     "static/css/main.59e1e736.css",
-    "static/js/main.a04604e0.js"
+    "static/js/main.550bc0dc.js"
   ]
 }
