@@ -25,7 +25,7 @@ const Header = ({ today }) => {
   return (
       <header>
         <h1>Nutri News</h1>
-        <p>Principais notícias de nutrição para hoje, {formatMonths[month] + ' ' + numDate}</p>
+        <p>Principais notícias de nutrição para hoje, {numDate + ' de ' + formatMonths[month]}</p>
       </header>
   );
 };
