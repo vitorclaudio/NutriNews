@@ -17,19 +17,24 @@ const App = () => {
 
     const filterArticles = (filterBy) => {
         const filtered = articles.filter(article =>
+            // Verifica se o título ou seção contém o termo pesquisado
             article.section.toLowerCase().includes(filterBy.toLowerCase()) ||
-            article.title.toLowerCase().includes(filterBy.toLowerCase())
+            article.title.toLowerCase().includes(filterBy.toLowerCase()) ||
+            // Verifica se alguma hashtag corresponde ao termo pesquisado
+            article.hashtags.some(hashtag => hashtag.toLowerCase() === filterBy.toLowerCase())
         );
         setFilteredResults(filtered);
         setFilter(true);
     };
 
     const toggleFilter = () => {
-        setFilter(!isFilter);
+        setFilter(false);
+        setFilteredResults(articles); // Restaura todos os artigos quando o filtro é desativado
     };
 
     useEffect(() => {
         setArticles(mockArticles);
+        setFilteredResults(mockArticles);
         setToday(new Date().toDateString());
     }, []);
 

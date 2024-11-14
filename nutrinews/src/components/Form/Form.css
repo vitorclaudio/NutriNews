@@ -28,7 +28,58 @@ button:hover {
 
 .search-btn,
 .clear-btn {
-  margin: 0;  
+  margin: 0;
+}
+
+/* Contêiner das hashtags */
+.hashtags-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; /* Remove o scroll vertical */
+  padding: 1em 0;
+  margin: 2em 0 1em 10px;
+  gap: 8px;
+  height: 50px; /* Altura fixa para o contêiner */
+  align-items: center; /* Centraliza as hashtags verticalmente */
+  scrollbar-width: thin; /* Para navegadores que suportam */
+}
+
+/* Estilos para cada hashtag */
+.hashtag {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  background-color: #e0e0e0;
+  border-radius: 16px;
+  padding: 0 12px; /* Ajuste de padding para evitar que o texto saia do centro */
+  margin-right: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+  font-size: 0.9em;
+  color: #333;
+  height: 32px; /* Altura fixa para centralizar o texto */
+  min-width: 80px; /* Largura mínima para as hashtags */
+}
+
+/* Alteração de cor ao passar o mouse */
+.hashtag:hover {
+  background-color: rgb(30 64 175);
+  color: #fff;
+}
+
+/* Ajuste para rolagem suave nas hashtags */
+.hashtags-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hashtags-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.hashtags-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 @media (max-width: 620px) {
@@ -43,7 +94,12 @@ button:hover {
   }
 
   input, button {
-  padding: 0.5em;
-  font-size: 1em;
-}
+    padding: 0.5em;
+    font-size: 1em;
+  }
+
+  .hashtag {
+    font-size: 0.8em;
+    height: 28px; /* Ajuste de altura para telas menores */
+  }
 }

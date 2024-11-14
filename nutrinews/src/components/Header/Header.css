@@ -1,34 +1,157 @@
-header {
+/* Estilos gerais para o header */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2em;
+}
+
+/* Contêiner dos botões */
+.button-container {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+/* Botões */
+.header-button {
+  padding: 0.4em 2em;
+  font-size: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #d1d1d1;
+}
+.register {
+  margin-right: -20px;
+  margin-left: -20px;
+
+}
+.subscribe {
+  background-color: #b3c6e0;
+  border: 1px solid #9ba4b5;
+}
+
+.subscribe:hover {
+  background-color: #9ba4b5;
+  color: #fff;
+}
+
+/* Logo */
+.logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Data */
+.header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Estilos para o modal */
+.login-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 30px;
+  width: 320px;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
 }
 
-header h1 {
-  font-size: 3.5em;
-  border-bottom: rgb(219, 218, 218) solid 1px;
-  font-weight: 700;
-  font-style: italic;
+.login-exit-button {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
+.input-container {
+  width: 100%;
+  margin-bottom: 15px;
+}
 
-@media (max-width: 720px) {
-  header h1 {
-    font-size: 2.8em;  
+.modal-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.buttonmodal {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonmodal:hover {
+  background-color: #0056b3;
+}
+
+.help-text {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.help-text a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.help-text a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .header-button {
+    padding: 0.4em 1em;
+    font-size: 0.8em;
   }
+}
 
-  header {
-    margin-top: 1.6em;
+@media (max-width: 480px) {
+  .header-button {
+    padding: 0.3em 0.8em;
+    font-size: 0.75em;
   }
 }
 
-@media (max-width: 580px) {
-  header h1 {
-    font-size: 2.5em;
-  } 
-}
-
-@media (max-width: 500px) {
-  header h1 {
-    font-size: 2.1em;
-  } 
+@media (max-width: 360px) {
+  .header-button {
+    padding: 0.3em 0.6em;
+    font-size: 0.7em;
+  }
 }
