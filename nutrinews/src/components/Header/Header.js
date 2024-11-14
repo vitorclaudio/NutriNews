@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import logo from '../../Images/Logo.png';
+import logo from '../../Images/LogoNutriNews.png';
 
 const Header = ({ today }) => {
     const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);

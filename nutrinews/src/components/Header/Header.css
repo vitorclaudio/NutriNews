@@ -48,7 +48,7 @@
 
 /* Logo */
 .logo {
-  width: 180px;
+  width: 350px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -103,6 +103,7 @@
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
+  margin-left: -15px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }

@@ -6,7 +6,14 @@ const Footer = () => {
       <footer>
         <h3>&copy; 2024 Nutri News UFU</h3>
 
-        <div className="personal-container">
+      </footer>
+    </div>
+  );
+};
+
+export default Footer;
+
+/*        <div className="personal-container">
           <h3 className="personal-info">
             Desenvolvido por Vitor Claudio
             <div className="personal-links">
@@ -25,9 +32,4 @@ const Footer = () => {
             </div>
           </h3>
         </div>
-      </footer>
-    </div>
-  );
-};
-
-export default Footer;
+*/
