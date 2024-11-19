@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NutriNews/static/css/main.a2ac6dae.css",
-    "main.js": "/NutriNews/static/js/main.4fcb6b2d.js",
+    "main.js": "/NutriNews/static/js/main.4d660c1a.js",
     "static/media/Jantar Vegano.jpg": "/NutriNews/static/media/Jantar Vegano.15e61a28d14e30f8f8b1.jpg",
     "static/media/Vegetais Frescos.jpg": "/NutriNews/static/media/Vegetais Frescos.8a9e50f1a6f10aac634c.jpg",
     "static/media/Alimentos Ricos em Fibras.jpg": "/NutriNews/static/media/Alimentos Ricos em Fibras.cfa81628f93786b3dabd.jpg",
@@ -14,10 +14,10 @@
     "static/media/Copo de Água.jpg": "/NutriNews/static/media/Copo de Água.d83558bda91c42ce19c9.jpg",
     "index.html": "/NutriNews/index.html",
     "main.a2ac6dae.css.map": "/NutriNews/static/css/main.a2ac6dae.css.map",
-    "main.4fcb6b2d.js.map": "/NutriNews/static/js/main.4fcb6b2d.js.map"
+    "main.4d660c1a.js.map": "/NutriNews/static/js/main.4d660c1a.js.map"
   },
   "entrypoints": [
     "static/css/main.a2ac6dae.css",
-    "static/js/main.4fcb6b2d.js"
+    "static/js/main.4d660c1a.js"
   ]
 }
